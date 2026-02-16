@@ -1,0 +1,8 @@
+{
+  "name": "Haridwar University Official Portal",
+  "description": "A high-performance, SEO-optimized university landing page for Haridwar University with an AI-powered student assistant and admin dashboard.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

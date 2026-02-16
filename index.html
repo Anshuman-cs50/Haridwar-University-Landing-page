@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Haridwar University | India's Number 1 Placement Campus</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://huroorkee.ac.in/favicon.ico">
+
+    <!-- Primary SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://huroorkee.ac.in">
+    
+    <!-- Hreflang for Regional SEO -->
+    <link rel="alternate" hreflang="en-IN" href="https://huroorkee.ac.in">
+    <link rel="alternate" hreflang="en" href="https://huroorkee.ac.in">
+    <link rel="alternate" hreflang="x-default" href="https://huroorkee.ac.in">
+
+    <!-- Performance: Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://huroorkee.ac.in">
+    <link rel="preconnect" href="https://player.vimeo.com">
+
+    <!-- Critical Asset Preload - Optimized for LCP and Logo -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1562774053-701939374585?auto=format,compress&fm=webp&q=75&w=1280&fit=crop" fetchpriority="high">
+    <link rel="preload" as="image" href="https://huroorkee.ac.in/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2Flogo-blue%2520%25281%2529-CQ6ZF37m5qr1logcYwUdoh5udLoFvO.png&w=256&q=75" fetchpriority="high">
+
+    <!-- Montserrat & Inter - Performance optimized font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS with Official Palette Refined -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0047FF',    
+              accent: '#00E676',     
+              action: '#FF1744',     
+              warning: '#FFEA00',    
+              highlight: '#FF9100',  
+              secondary: '#000000',  
+              surface: '#ffffff',
+              muted: '#64748b',
+            },
+            fontFamily: {
+              sans: ['Inter', 'Montserrat', 'sans-serif'],
+              heading: ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              'marquee': 'marquee 30s linear infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'reveal': 'reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+              'float': 'float 6s ease-in-out infinite',
+              'shimmer': 'shimmer 2.5s infinite linear',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              reveal: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'float': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              'shimmer': {
+                '0%': { backgroundPosition: '-1000px 0' },
+                '100%': { backgroundPosition: '1000px 0' },
+              }
+            },
+            boxShadow: {
+              'blue-glow': '0 25px 50px -12px rgba(0, 71, 255, 0.25)',
+              'green-glow': '0 25px 50px -12px rgba(0, 230, 118, 0.25)',
+              'red-glow': '0 25px 50px -12px rgba(255, 23, 68, 0.35)',
+              'orange-glow': '0 25px 50px -12px rgba(255, 145, 0, 0.25)',
+              'soft-2xl': '0 30px 60px -15px rgba(0, 0, 0, 0.1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      body { 
+        background-color: #ffffff; 
+        color: #000000; 
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      
+      section {
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 800px;
+      }
+      #home { content-visibility: visible; }
+      
+      .brand-gradient-blue { background: linear-gradient(135deg, #0047FF 0%, #001a33 100%); }
+      
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #f8fafc; }
+      ::-webkit-scrollbar-thumb { background: #0047FF; border-radius: 10px; }
+
+      .shimmer-bg {
+        background: linear-gradient(to right, #f1f5f9 4%, #e2e8f0 25%, #f1f5f9 36%);
+        background-size: 1000px 100%;
+        animation: shimmer 2.5s linear infinite;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="selection:bg-primary selection:text-white">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
